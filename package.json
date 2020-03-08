@@ -1,0 +1,25 @@
+{
+  "name": "purescript-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "purs-loader": "^3.7.1",
+    "purescript-psa": "^0.7.3",
+    "style-loader": "^1.1.3",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack": "^4.42.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack-dev-server --progress --inline --hot"
+  },
+  "author": "",
+  "license": "ISC"
+}
