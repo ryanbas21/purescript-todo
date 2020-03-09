@@ -4,4 +4,3 @@ if (module.hot) {
     module.hot.accept();
 }
 
-console.log("app starting");

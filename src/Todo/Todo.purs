@@ -1,4 +1,4 @@
-module Todo.Todo (component) where
+module Todo.Todo (component, Todos) where
   
 import Prelude
 
@@ -25,7 +25,6 @@ data Action a =
     AddTodo a
   | UpdateInput a
 
-
 initialState :: forall i. i -> State 
 initialState _ = { 
                    input : ""
@@ -39,6 +38,7 @@ component =
     , render
     , eval: H.mkEval $ H.defaultEval { handleAction = handleAction }
     }
+
 
 handleAction ∷ forall o m. (Action String) -> H.HalogenM State (Action String) () o m Unit
 handleAction = case _ of
@@ -67,5 +67,5 @@ render state = HH.div_
     ] 
   , HH.button [ 
                 HE.onClick $ (\ _ -> (Just <<< AddTodo) state.input)
-              ] []
+              ] [ HH.text "Add"]
   ]

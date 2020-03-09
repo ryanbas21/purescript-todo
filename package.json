@@ -18,7 +18,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "webpack-dev-server --progress --inline --hot"
+    "dev": "webpack-dev-server --progress --inline --hot",
+    "start": "webpack-dev-server --progress --inline "
   },
   "author": "",
   "license": "ISC"
